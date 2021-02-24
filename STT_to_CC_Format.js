@@ -8,7 +8,6 @@ function timeFmt(f) {
 	var i = Math.floor(f);
 
 	t.ms3 = (("" + (f - i).toPrecision(3)) + "000").substring(2, 5);
-	t.ms2 = (("" + (f - i).toPrecision(2)) + "00").substring(2, 4);
 
 	t.s = i % 60;
 	t.m = (Math.floor(i / 60)) % 60;
@@ -20,7 +19,7 @@ function timeFmtSrt(f) {
 	var t = timeFmt(f);
 	return "" + ((t.h < 10) ? "0" + t.h : t.h) + ":"
 			+ ((t.m < 10) ? "0" + t.m : t.m) + ":"
-			+ ((t.s < 10) ? "0" + t.s : t.s) + "," + t.ms2;
+			+ ((t.s < 10) ? "0" + t.s : t.s) + "," + t.ms3;
 }
 
 function timeFmtVtt(f) {

@@ -1,6 +1,6 @@
 {
   "name": "watson-closed-captions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Produces closed captions from Watson Speech to Text results",
   "main": "watson-closed-captions.js",
   "scripts": {
